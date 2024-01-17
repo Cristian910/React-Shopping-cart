@@ -1,0 +1,60 @@
+input[type=checkbox] {
+    cursor: pointer;
+}
+.btnCart {
+    background-color: blue;
+    position: fixed;
+    right: 110px;
+    top: 30px;
+    padding: 5px 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 999;
+}
+
+.listCart {
+    display: none;
+    position: fixed;
+    width: 200px;
+    background-color: rgba(19, 19, 34,.9);
+    right: 0px;
+    padding: 32px;
+    text-transform: capitalize;
+    overflow-y: scroll;
+}
+.listCart > ul {
+    list-style: none;
+    margin-top: 70px;
+    
+}
+
+.listCart li { 
+    margin: 30px 0;
+    padding-bottom: 20px;
+    border-bottom: 1px solid white;
+}
+.listCart li div {
+    margin: 10px;
+}
+.listCart li footer button{
+    margin-left: 20px
+}
+.listCart li footer small {
+    font-size: 16px;
+}
+.listCart img {
+    width: 200px;
+}
+.listCart li button {
+    width: 30px;
+}
+.btnClear {
+    padding: 5px 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    width: auto;
+}
+.btnCart ~ input:checked ~ .listCart {
+    display: block;
+    height: 100%;
+}
